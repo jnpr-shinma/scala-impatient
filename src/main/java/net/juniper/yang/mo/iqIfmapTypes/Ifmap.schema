@@ -1,0 +1,13 @@
+<schema>
+    <node>
+        <tagpath>/</tagpath>
+        <namespace>http://www.juniper.net/ns/iq/ifmap</namespace>
+        <primitive_type>0</primitive_type>
+        <yang_node_type>module</yang_node_type>
+        <min_occurs>1</min_occurs>
+        <max_occurs>1</max_occurs>
+        <children></children>
+        <flags>0</flags>
+        <desc></desc>
+    </node>
+</schema>

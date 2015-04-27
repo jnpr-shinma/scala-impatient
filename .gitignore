@@ -1,0 +1,14 @@
+# Ignore following directories and file types
+/.idea/*
+/.classpath/*
+/.project/*
+/.settings/*
+/project/project/*
+project/target/*
+**/target
+*.class
+*.iml
+*.sc
+/.classpath/*
+/.project/*
+/.settings/*
