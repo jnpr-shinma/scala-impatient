@@ -6,7 +6,12 @@ scalaVersion := "2.11.4"
 
 libraryDependencies ++= {
   Seq(
-    "com.thinkaurelius.titan" % "titan-all" % "0.5.4",
+    "io.spray" %%  "spray-json" % "1.3.1",
+    "com.thinkaurelius.titan" % "titan-core" % "0.5.4",
+    "com.thinkaurelius.titan" % "titan-cassandra" % "0.5.4",
+    "com.thinkaurelius.titan" % "titan-es" % "0.5.4",
+    "com.thinkaurelius.titan" % "titan-berkeleyjed" % "0.5.4",
+    "org.elasticsearch"          %   "elasticsearch"               % "1.5.0"       % "test"   withSources(),
     "com.woorea"  %	"keystone-client"	 % "3.2.2-alpha.1",
     "com.woorea"  %	"resteasy-connector"	 % "3.2.2-alpha.1",
     "org.scalatest" % "scalatest_2.11" % "2.2.1" % "test",
