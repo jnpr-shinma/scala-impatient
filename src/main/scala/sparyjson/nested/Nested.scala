@@ -18,7 +18,6 @@ object PatchProtocol extends DefaultJsonProtocol {
 object GoSox extends App {
 //  import sparyjson.nested.PatchProtocol._
   //  import sparyjson.nested.MyJsonProtoco
-  // l._//  import sparyjson.nested.MyJsonProtocol._
   import sparyjson.nested.PatchProtocol._
   val j1son = """{"diff":{"replace":[{"name":"city","value":"Regression_AD1_patch"},{"name":"email","value":"description modified"}]},{"add": [{"name": "address/name","value": "Regression_AD1_patch"},{"name": "address/description","value": "description modified"}]}}"""
   val json1 = """{"diff":{"replace":[{"name":"city","value":"Regression_AD1_patch"},{"name":"email","value":"description modified"}]}}"""
@@ -30,8 +29,11 @@ object GoSox extends App {
   println(ast.prettyPrint)
   println(ast.compactPrint)
   println(ast.convertTo[Diff])
-//    val diff=json2.parseJson.convertTo[Diff]
+//    val diff=json2.git
 //    println(diff)
+
+  val diff = Diff(None, None, Some(Seq(Replace("bill-info/bill-country", "china"))))
+  println(diff.toJson.compactPrint)
 }
 
 
