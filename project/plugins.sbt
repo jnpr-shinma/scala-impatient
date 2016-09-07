@@ -14,8 +14,3 @@ addSbtPlugin("com.typesafe.sbt" % "sbt-scalariform" % "1.3.0")
 
 addSbtPlugin("net.virtual-void" % "sbt-dependency-graph" % "0.7.4")
 
-resolvers += Resolver.url(
-  "SCP Maven Repo",
-  url("http://10.155.87.253:8081/nexus/content/groups/scp-repo"))(Resolver.ivyStylePatterns)
-
-addSbtPlugin("net.juniper" % "yang-plugin" % "0.8.7")
